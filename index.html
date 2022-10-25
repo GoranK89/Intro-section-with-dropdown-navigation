@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <img class="logo" src="images/logo.svg" alt="snap logo" />
+
+      <!-- MOBILE NAVIGATION BUTTONS -->
+      <button class="btn-mobile-nav">
+        <img class="icon-mobile-nav" src="images/icon-menu.svg" name="menu-outline"></img>
+        <img class="icon-mobile-nav" src="images/icon-close-menu.svg" name="close-outline"></img>
+      </button>
+
+      <div class ="overlay hide"></div>
+
+      <div class="nav-log-links-container">
+
+        <div class="nav-links">
+          <div class="features">
+          <a class="nav-link" href="#"
+            >Features <img src="images/icon-arrow-down.svg" class="icon-arrow"
+            /></a>
+          <!-- dropdown content -->
+          <ul class="features-dropdown-content hide-content">
+            <li class="dropdown-item">
+              <img src="images/icon-todo.svg" alt="todo list icon" /><a
+              href="#"
+              class="dropdown-link"
+              >Todo List</a
+              >
+            </li>
+            <li class="dropdown-item">
+              <img src="images/icon-calendar.svg" alt="calendar icon" /><a
+              href="#"
+              class="dropdown-link"
+              >Calendar</a
+              >
+            </li>
+            <li class="dropdown-item">
+              <img src="images/icon-reminders.svg" alt="reminders icon" /><a
+              href="#"
+              class="dropdown-link"
+              >Reminders</a
+              >
+            </li>
+            <li class="dropdown-item">
+              <img src="images/icon-planning.svg" alt="planning icon" /><a
+              href="#"
+              class="dropdown-link"
+              >Planning</a
+              >
+            </li>
+          </ul>
+        </div>
+        
+        <div class="company">
+          <a class="nav-link" href="#"
+          >Company <img src="images/icon-arrow-down.svg" class="icon-arrow"
+          /></a>
+          <!-- dropdown content -->
+          <ul class="company-dropdown-content hide-content">
+            <li class="dropdown-item">
+              <a href="#" class="dropdown-link">History</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="#" class="dropdown-link">Our team</a>
+            </li>
+            <li class="dropdown-item">
+              <a href="#" class="dropdown-link">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <a class="nav-link" href="#">Careers</a>
+        <a class="nav-link" href="#">About</a>
+      </div>
+      
+      <div class="login-links">
+        <a class="nav-link" href="#">Login</a>
+        <a class="nav-link" href="#"
+        ><button class="register-btn">Register</button></a
+        >
+      </div>
+    </div>
+    </header>
+    <main class="main-container">
+      <div class="main-content">
+        <h1>Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="btn-learn">Learn more</button>
+      </div>
+
+      <div class="client-logo-container">
+        <img
+          class="client-logo"
+          src="images/client-databiz.svg"
+          alt="databiz company logo"
+        />
+        <img
+          class="client-logo"
+          src="images/client-audiophile.svg"
+          alt="audiophile company logo"
+        />
+        <img
+          class="client-logo"
+          src="images/client-meet.svg"
+          alt="meet company logo"
+        />
+        <img
+          class="client-logo"
+          src="images/client-maker.svg"
+          alt="maker company logo"
+        />
+      </div>
+      <img
+        class="landing-img"
+        src="images/image-hero-desktop.png"
+        alt="artistic colorful image of a man standing and typing on a laptop"
+      />
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.frontendmentor.io/profile/GoranK89">Goran Kolar</a>.
+    </div>
+  </body>
+</html>
